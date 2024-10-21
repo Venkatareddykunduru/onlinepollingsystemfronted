@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Polling System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="createPoll.html">Create Poll</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="userProfile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="allPolls.html">All Polls</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pollResults.html">Poll Results</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="container mt-5">
+        <h2>User Profile</h2>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Username: John Doe</h4>
+                <p class="card-text">Email: johndoe@example.com</p>
+                <h5>Polls Created</h5>
+                <ul id="createdPollsList">
+                    <!-- List of polls created by the user -->
+                </ul>
+                <h5>Polls Voted On</h5>
+                <ul id="votedPollsList">
+                    <!-- List of polls the user has voted on -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
